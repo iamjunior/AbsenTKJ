@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="AbsenTKJ.exe" version="1.0.0.1" publicKeyToken="60c3302165cdb4fe" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="AbsenTKJ" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="AbsenTKJ.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="MySql.Data" version="6.9.11.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AbsenTKJ.exe" size="253952">
+      <assemblyIdentity name="AbsenTKJ" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>KBwBW90rt8FFeM2UBVv3H4wf9Uk6FARfT6HwK3LEOVs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="AbsenTKJ.exe.config" size="186">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>h0UeIdteCM29dGVw07LmHp593fPbh0IN11GyN3f2uRA=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=ASTRINDO1\MICE TB" issuerKeyHash="7db963abf83fc74c2a7e26c7542349c6bffc7524" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>yTIKdCsDb+9SBhE9dnYqXnqcun+SBdplBRuU/wkAqfI=</DigestValue></Reference></SignedInfo><SignatureValue>EjzxrPUwUX8fKWvg+vAKXhNT3q0evLvIOEFFy72KlGvUUmuTwb885paiW6DFcIMcOj1z6FuciAt7o6qLlraRoSWSMt5cSm6cf69m2ncnlDVCKVkPdO/Ham7N8sDSrBnIpAv2pVu0aQUmQhiIsOe9ZkbsAS/3eMijwhknMjDtHe8=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>rQNyIplKmmGjqWiugDCe84NAw1Yz4dliQdrkJ5RRLgx3qVPk8MijRG9wgZAGd8MEk94fmKr2v/Fuxoy0FJiri23Ke9jxVup/C1oT6eUNvRjM2SklaGfuWPsX5qadQgfvAxYFUhLV9cIBOcEaVkKLK0VeIptIlOwPqaj713Y/wtk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="f2a90009ff941b0565da05927fba9c7a5e2a76763d110652ef6f032b740a32c9" Description="" Url=""><as:assemblyIdentity name="AbsenTKJ.exe" version="1.0.0.1" publicKeyToken="60c3302165cdb4fe" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=ASTRINDO1\MICE TB</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>vXLawgUz9cGzZln3Sl0bzCJ3jFpS+apBM1ASA+QehCA=</DigestValue></Reference></SignedInfo><SignatureValue>iYrxgKXQ2dmBazqFpbgKHWouxtWiRy/k1vKnv3a8rQN1w7l74jWVSI3kyuEtfUj/8/2q7pYBSv7Ulnr5xJzn+lsw9W3KGjVrhR026W5Ndnj9GOI3qWS3AZlQKh54+dDSuIZli17IwYkIAjYm2GaAhHZ1xQ2hbjfnfKGwP7sDdv0=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>rQNyIplKmmGjqWiugDCe84NAw1Yz4dliQdrkJ5RRLgx3qVPk8MijRG9wgZAGd8MEk94fmKr2v/Fuxoy0FJiri23Ke9jxVup/C1oT6eUNvRjM2SklaGfuWPsX5qadQgfvAxYFUhLV9cIBOcEaVkKLK0VeIptIlOwPqaj713Y/wtk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB3TCCAUagAwIBAgIQXFW6O8zfrq1LNGdcJOHjYjANBgkqhkiG9w0BAQsFADAtMSswKQYDVQQDHiIAQQBTAFQAUgBJAE4ARABPADEAXABNAEkAQwBFACAAVABCMB4XDTE4MDUxOTE2MjI1OFoXDTE5MDUxOTIyMjI1OFowLTErMCkGA1UEAx4iAEEAUwBUAFIASQBOAEQATwAxAFwATQBJAEMARQAgAFQAQjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEArQNyIplKmmGjqWiugDCe84NAw1Yz4dliQdrkJ5RRLgx3qVPk8MijRG9wgZAGd8MEk94fmKr2v/Fuxoy0FJiri23Ke9jxVup/C1oT6eUNvRjM2SklaGfuWPsX5qadQgfvAxYFUhLV9cIBOcEaVkKLK0VeIptIlOwPqaj713Y/wtkCAwEAATANBgkqhkiG9w0BAQsFAAOBgQAkajjo6/BorzApkFfSk4aZknP0cUwqPE9Cl8D9qk2FOEDm0icFW9EiZ0ZjGCaW/yVgsqsuDbqTIW1hLRII/YOe7XieNrigan0+JUhgnx/H0TZ5XSuXCDY1V4MVKc8in1olxrr8WPdbgweNuBQyqFnbcCvoGJasNtezYg090E+6lg==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
